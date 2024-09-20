@@ -1,0 +1,24 @@
+@import './base.css';
+@import "./null.css";
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+/*// overflow: hidden;*/
+/*// Прижимаем footer*/
+> main {
+  flex: 1 1 auto;
+}
+/*// Фикс для слайдеров*/
+> * {
+  min-width: 0;
+}
+}
+
+.container {
+    max-width: var(--maxWidthContainer);
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0 calc(var(--containerPadding) / 2 * 1px);
+}
